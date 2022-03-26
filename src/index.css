@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-2xl;
+	}
+}
+@layer components {
+	.hl-btn {
+		@apply bg-green-military-lt border-l-[1px] border-t-[1px] text-left text-white text-opacity-[0.85] pr-12 outline outline-1 outline-black border-white pl-2 min-w-[24px] hover:bg-[#42493d] hover:text-yellow-lt;
+	}
+	.hl-card-lt {
+		@apply border-[1px] border-black border-t-white border-l-white p-8 min-w-[580px] bg-green-military-lt max-w-2xl;
+	}
+	.hl-card-dk {
+		@apply shadow-[0px_0px_0px_1px_black_inset] p-8 min-w-[580px] bg-[#2b3326] max-w-2xl;
+	}
+	.hl-input:focus {
+		@apply outline-none;
+	}
+	.hl-input {
+		@apply bg-green-military-dk border-[1px] border-t-black border-l-black border-r-white border-b-white px-2 py-1 text-white opacity-90 placeholder:text-yellow-lt;
+	}
+	.hl-input::-webkit-scrollbar {
+		width: 1.5rem;
+	}
+	.hl-input::-webkit-scrollbar-track {
+		@apply bg-green-military-lt;
+	}
+	.hl-input::-webkit-scrollbar-thumb {
+		@apply bg-[#3a4434] border-[1px];
+	}
+	.hl-input::-webkit-scrollbar-button {
+		@apply bg-green-military-dk h-6 shadow-inner shadow-black;
+	}
+}
